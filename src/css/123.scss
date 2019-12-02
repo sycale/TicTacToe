@@ -275,21 +275,23 @@ footer {
     margin-top:91px;
     margin-left:213px;
 }
-.item__name {
-    height: 92px;
-    width: 317px;
-    font-size: 36px;
-    line-height: 46px;    
-    letter-spacing: 0.05em;
-}
-.item__text {
-    height: 80px;
-    width: 460px;
-    opacity: 0.6;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;    
-    margin-top: 32px;
+.item{
+    &__name {
+        height: 92px;
+        width: 317px;
+        font-size: 36px;
+        line-height: 46px;    
+        letter-spacing: 0.05em;
+    }
+    &__text {
+        height: 80px;
+        width: 460px;
+        opacity: 0.6;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;    
+        margin-top: 32px;
+    }
 }
 .work-team__sumbit {
     margin-top: 165px;
@@ -310,11 +312,11 @@ footer {
         height: 32px;
     }
 }
-.info__cols-lol {
+.info__cols-about {
     margin-top:96px ;
     margin-left: 100px;
 }
-.info__cols-kek {
+.info__cols-follow {
     margin-top:96px ;
     margin-left: 77px;
 }
