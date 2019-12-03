@@ -1,1 +1,1 @@
-import './css/123.scss';
+import './css/afrianska.scss';
