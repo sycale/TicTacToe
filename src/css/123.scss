@@ -199,6 +199,7 @@ body{
             display: flex;
             flex-direction: column;
             margin-bottom: 50px;
+            border:none;
             span{
                 color:$main-inf-addit-color;
                 font-size:$main-inf-main-text-size - 5px;
