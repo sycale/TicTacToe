@@ -58,6 +58,7 @@ body {
   height: 250px;
   background: url("/assets/background.jpg") no-repeat;
   background-size: cover;
+  background-size: 100%;
 
   &--main {
     padding-top: 60px;
@@ -194,11 +195,14 @@ body {
       }
     }
     .message--box {
-      margin-left: 60px;
+      margin-left: 56px;
+      margin-right: 56px;
       display: flex;
       flex-direction: column;
       margin-bottom: 50px;
       border: none;
+      width: 540px;
+
       span {
         color: $main-inf-addit-color;
         font-size: $main-inf-main-text-size - 5px;
@@ -206,8 +210,8 @@ body {
       }
       input {
         margin-top: 10px;
-        width: 90%;
-        height: 80px;
+        width: 428px;
+        height: 72px;
         border-radius: 10px;
         border: solid rgb(218, 218, 245) 1px;
         padding: 20px;
@@ -216,11 +220,14 @@ body {
       }
     }
     .message--addit_mes input {
-      height: 200px;
+      height: 144px;
+      width: 428px;
+      display: flex;
+      padding-bottom: 93px;
     }
     .message--btn {
       margin-top: 80px;
-      width: 80%;
+      width: 428px;
       border-radius: 10px;
       background-color: rgb(152, 152, 255);
       height: 80px;
@@ -239,53 +246,47 @@ body {
     }
   }
 }
-.map_pic {
+.map {
   display: flex;
   justify-content: center;
   margin-top: 120px;
   width: 1336px;
   margin-left: auto;
   margin-right: auto;
-  img {
+  &--pic {
     margin-left: 60px;
     width: 1080px;
   }
 }
-.top_section-bot_border {
-  border-bottom: solid white 1px;
-}
 .footer {
-  &-color {
-    background: #316099;
-  }
-  &-params {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin-top: 80px;
-    height: 869px;
-    border-radius: 0px 200px 0px 0px;
-  }
+  background: #316099;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-top: 80px;
+  height: 869px;
+  border-radius: 0px 200px 0px 0px;
 
-  &--top_section {
+  &__top-content {
     width: 1073px;
     padding-bottom: 96px;
     display: flex;
     flex-direction: row;
-    .work--content {
+    &--border {
+      border-bottom: solid white 1px;
+    }
+    .work {
       display: flex;
       flex-direction: column;
-      &-params {
-        margin-left: 213px;
-        margin-top: 91px;
-      }
-      .work--title {
+      margin-left: 213px;
+      margin-top: 91px;
+      .work__title {
         font-size: 36px;
         width: 317px;
         height: 92px;
         color: white;
       }
-      .work--slogan {
+      .work__subtitle {
         margin-top: 32px;
         width: 460px;
         height: 80px;
@@ -298,7 +299,7 @@ body {
       }
     }
 
-    .work--btn {
+    .top-content--btn {
       margin-left: 180px;
       margin-top: 165px;
       .btn--submit {
@@ -314,21 +315,39 @@ body {
       }
     }
   }
-  &--bot_content {
+  &__bot-content {
     margin-left: 215px;
     margin-top: 104px;
     display: flex;
     flex-direction: row;
     .info {
+      display: flex;
+      flex-direction: column;
       margin-right: 100px;
-      .info--item {
+      &-socials {
+        margin-left: -30px;
+      }
+      &__item {
         margin-bottom: 24px;
         width: 264px;
         height: 26px;
-        b {
+        &--main {
+          font-family: Gilroy;
+          font-size: 28px;
+          letter-spacing: 0.02em;
           color: white;
-          margin-right: 16px;
         }
+        &--secondary {
+          font-family: Gilroy;
+          font-size: 16px;
+          line-height: 26px;
+          color: white;
+          letter-spacing: 0.05em;
+        }
+      }
+      &__bold-text {
+        color: white;
+        margin-right: 16px;
       }
     }
   }
@@ -336,32 +355,16 @@ body {
 .item--main {
   margin-bottom: 32px;
 }
-.item {
-  &--main-style {
-    font-family: Gilroy;
-    font-size: 28px;
-    letter-spacing: 0.02em;
-    color: white;
-  }
-  &--secondary-style {
-    font-family: Gilroy;
-    font-size: 16px;
-    line-height: 26px;
-    color: white;
-    letter-spacing: 0.05em;
-  }
-}
+
 .logo--img {
   width: $header-pic-width;
 }
-.socials {
-  margin-left: -30px;
-}
+
 .copyright {
   margin-left: 213px;
   margin-top: 64px;
 
-  &--text {
+  &__text {
     font-family: Gilroy;
     font-size: 16px;
     line-height: 26px;
