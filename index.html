@@ -4,88 +4,100 @@
   </head>
   <body>
     <div class="header">
-      <div class="header--switch_theme">
-        <img class="switch_theme--pic" src="./assets/logo-header.png" />
+      <div class="header__logo">
+        <img class="logo-img" src="./assets/logo-header.png" />
       </div>
-      <div class="header--options">
-        <img class="options--pic" src="./assets/sq.png" />
+      <div class="header__navigation">
+        <img class="logo-img" src="./assets/sq.png" />
       </div>
     </div>
-    <div class="cont_inf">
-      <div class="cont_inf--main">
-        <span class="main--text">Contact Us</span>
+    <!--Bem-->
+    <div class="banner">
+      <div class="banner__title">
+        <span class="title__text">Contact Us</span>
       </div>
-      <div class="cont_inf--addit">
-        <span class="addit--text"
+      <div class="banner__subtitle">
+        <span class="subtitle__text"
           >Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </span>
       </div>
     </div>
-    <div class="main_cont">
-      <div class="main_cont--info">
-        <div class="info--pic">
-          <img
-            src="./assets/sitting_on_couch.png"
-            onclick="alert('Все тут норм, не чекай')"
-          />
-        </div>
-        <div class="info--address">
-          <span class="address--main">ADDRESS</span>
-          <span class="address--addit"
-            >Id convallis placerat sit sed duis id amet volutpat quam a,
-            pharetra
-          </span>
-        </div>
-        <div class="info--phone">
-          <span class="phone--main">PHONE</span>
-          <div class="phone--number">
-            <img src="./assets/phone.png" class="number--pic" />
+    <!--bem-->
+    <div class="main-content">
+      <div class="main-content__info">
+        <img
+          class="info__pic"
+          src="./assets/sitting_on_couch.png"
+          onclick="alert('Все тут норм, не чекай')"
+        />
+
+        <span class="info__address info__address--main">ADDRESS</span>
+        <span class="info__address info__address--secondary"
+          >Id convallis placerat sit sed duis id amet volutpat quam a, pharetra
+        </span>
+        <!--bem-->
+        <div class="info__phone">
+          <span class="phone__text ">PHONE</span>
+          <div class="phone__number">
+            <img src="./assets/phone.png" class="number--img" />
             <span class="number--text">+62-812-7313-4321</span>
           </div>
-          <div class="phone--number">
-            <img src="./assets/phone.png" class="number--pic" />
+          <div class="phone__number">
+            <img src="./assets/phone.png" class="number--img" />
             <span class="number--text">+62-812-7313-4321</span>
           </div>
         </div>
-        <div class="info--onl_serv">
-          <span class="onl_serv--text">ONLINE SERVICE</span>
-          <div class="onl_serv--web">
-            <img src="./assets/web.png" />
-            <span class="web--text">www.afrianska.com</span>
+        <div class="info__online-service">
+          <span class="online-service__title">ONLINE SERVICE</span>
+          <div class="online-service__web">
+            <img class="web__img" src="./assets/web.png" />
+            <span class="web__text">www.afrianska.com</span>
           </div>
-          <div class="onl_serv--mail">
-            <img src="./assets/mail.jpg" />
-            <span>hello.afrianska@gmail.com</span>
+          <div class="online-service__mail">
+            <img class="mail__img" src="./assets/mail.jpg" />
+            <span class="mail__text">hello.afrianska@gmail.com</span>
           </div>
         </div>
       </div>
-      <div class="main_cont--message">
-        <div class="message--text"><span>SEND US MESSAGE</span></div>
-        <div class="message--full_name message--box">
-          <span>Full Name</span>
-          <input type="text" placeholder="Your Name" />
+      <!--bem-->
+      <div class="main-content__feedback">
+        <div class="feedback__title">
+          <span class="title__text">SEND US MESSAGE</span>
         </div>
-        <div class="message--email message--box">
-          <span>Email</span>
-          <input type="text" placeholder="Your Email" />
+        <div class="msg-box">
+          <span class="msg-box__text">Full Name</span>
+          <input
+            class="msg-box__inputbox"
+            type="text"
+            placeholder="Your Name"
+          />
         </div>
-        <div class="message--addit_mes message--box">
-          <span>Message</span>
-          <input type="text" placeholder="Your Message" />
+        <div class="msg-box">
+          <span class="msg-box__text">Email</span>
+          <input
+            class="msg-box__inputbox"
+            type="text"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="msg-box">
+          <span class="msg-box__text">Message</span>
+          <input
+            class="msg-box__inputbox additional__inputbox"
+            type="text"
+            placeholder="Your Message"
+          />
         </div>
         <div>
-          <button
-            class="message--btn message--box"
-            onclick="alert('SUmbitte');"
-          >
-            <span> SUBMIT </span>
+          <button class="msg-box submit-btn" onclick="alert('SUmbitte');">
+            <span class="submit-btn__text"> SUBMIT </span>
           </button>
         </div>
       </div>
     </div>
     <div class="map">
-      <img src="./assets/map.png" class="map--pic" />
+      <img src="./assets/map.png" class="map-pic" />
     </div>
     <!--FOOTER BEM-->
     <footer class="footer">
@@ -105,16 +117,17 @@
         </div>
       </div>
       <div class="footer__bot-content">
-        <div class="info">
-          <img src="./assets/logo.png" class="logo--img" /><span
-            class="info__item info__item--main"
-            >Afrianska</span
-          >
+        <div class="footer__info">
+          <div class="info__logo-block">
+            <img src="./assets/logo.png" class="logo-img" /><span
+              class="info__item info__item--main"
+              >Afrianska</span
+            >
+          </div>
           <b class="info__bold-text">A.</b
           ><span class="info__item info__item--secondary"
             >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
           >
-
           <b class="info__bold-text">T.</b
           ><span class="info__item info__item--secondary"
             >+62-812-7313-4321</span
