@@ -28,12 +28,16 @@ module.exports = {
               
               
             },
+            {
+              test: /\.exec\.js$/,
+              use: [ 'script-loader' ]
+            }
         ]
       },
     plugins: [
          //will automatically inject bundle js into ./dist/index.html
          new HTMLWebpackPlugin({
-             template: './index.html', //source
+             template: './src/index.html', //source
              filename: 'index.html'  //destination
          }),
         new ExtractTextPlugin('style.css')

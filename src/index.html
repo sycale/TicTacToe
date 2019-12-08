@@ -1,0 +1,422 @@
+<html>
+  <head>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <!-- <script>
+      function func1() {
+        var b = document.getElementById("hidden-desc");
+        b.style.display = "inline";
+        console.log("123");
+      }
+      function func2() {
+        var b = document.getElementById("hidden-desc");
+        b.style.display = "none";
+      }
+      function func3() {
+        var b = document.getElementById("hidden-desc2");
+        b.style.display = "inline";
+        console.log("123");
+      }
+      function func4() {
+        var b = document.getElementById("hidden-desc2");
+        b.style.display = "none";
+      }
+      function func5() {
+        var b = document.getElementById("hidden-desc3");
+        b.style.display = "inline";
+        console.log("123");
+      }
+      function func6() {
+        var b = document.getElementById("hidden-desc3");
+        b.style.display = "none";
+      }
+      function func7() {
+        var b = document.getElementById("hidden-desc4");
+        b.style.display = "inline";
+        console.log("123");
+      }
+      function func8() {
+        var b = document.getElementById("hidden-desc4");
+        b.style.display = "none";
+      }
+      function func9() {
+        var b = document.getElementById("hidden-desc5");
+        b.style.display = "inline";
+        console.log("123");
+      }
+      function func10() {
+        var b = document.getElementById("hidden-desc5");
+        b.style.display = "none";
+      }
+      function func11() {
+        var b = document.getElementById("hidden-desc6");
+        b.style.display = "inline";
+        console.log("123");
+      }
+      function func12() {
+        var b = document.getElementById("hidden-desc6");
+        b.style.display = "none";
+      }
+    </script>  -->
+    <script>
+  function funct(){
+    var d = document.getElementById('test');
+    d.classList.toggle('displayn');
+}
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="./assets/flex-grow.svg" />
+      </div>
+      <div class="header-offer rectangle rectangle--header">
+        <div class="header-offer__badge rectangle">
+          <span class="badge__text">FREE</span>
+        </div>
+        <div class="header-offer__slogan">
+          <span class="slogan__text"
+            >See our PRO version for more design components & coded in React
+            follow this link:<a href="#"
+              ><span class="link">
+                https://devias.io/products/devias-kit-pro</span
+              >
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="header-options">
+        <img
+          class="header-options__img "
+          src="./assets/outline-contact_support-24px.png"
+        />
+        <img src="./assets/quit.png" />
+      </div>
+    </header>
+    <!--/Header---------------------------------------------------------------->
+    <div class="page">
+      <div class="aside">
+        <div class="aside-avatar">
+          <img src="./assets/Oval.png" class="aside-avatar__img" />
+          <div class="aside-avatar__title">
+            <span class="title">Roman Kutepov</span>
+          </div>
+          <div class="aside-avatar__subtitle">
+            <span class="subtitle">Brain Director</span>
+          </div>
+        </div>
+        <img class="temp-line" src="./assets/Rectangle.png" />
+        <div class="aside-menu">
+          <div class="aside-menu__list">
+            <img class="list__pic" src="./assets/outline-dashboard-24px.png" />
+            <span class="list__text">Dashboard</span>
+          </div>
+          <div class="aside-menu__list">
+            <img
+              class="list__pic"
+              src="./assets/outline-dashboard-24px(2).png"
+            />
+            <span class="list__text">Users</span>
+          </div>
+          <div class="aside-menu__list">
+            <img
+              src="./assets/outline-dashboard-24px(3).png"
+              class="list__pic"
+            />
+            <span class="list__text">Products</span>
+          </div>
+          <div class="aside-menu__list">
+            <img
+              src="./assets/outline-dashboard-24px(4).png"
+              class="list__pic"
+            />
+            <span class="list__text">Authentication</span>
+          </div>
+          <div class="aside-menu__list">
+            <img
+              src="./assets/outline-dashboard-24px(5).png"
+              class="list__pic"
+            />
+            <span class="list__text">Typography</span>
+          </div>
+          <div class="aside-menu__list">
+            <img
+              src="./assets/outline-dashboard-24px(6).png"
+              class="list__pic"
+            />
+            <span class="list__text">Icons & Images</span>
+          </div>
+        </div>
+
+        <img
+          class="temp-line temp-line--modified"
+          src="./assets/Rectangle.png"
+        />
+        <div class="aside-support">
+          <span class="aside-support__text">Support</span>
+          <div class="aside-menu__list support-list">
+            <img
+              src="./assets/outline-dashboard-24px(7).png"
+              class="list__pic"
+            />
+            <span class="list__text">Support</span>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <nav class="navigation">
+          <div class="navigation__item">
+            <span class="item__text">Profile</span>
+          </div>
+          <div class="navigation__item">
+            <span class="item__text">Account</span>
+          </div>
+          <div class="navigation__item">
+            <span class="item__text item__text--wide">Price Plans</span>
+          </div>
+        </nav>
+        <div class="settings">
+          <div class="settings__portrait">
+            <div class="info">
+              <div class="info__left-sidebar">
+                <span class="left-sidebar__fname">Adrian Stefan</span>
+                <span class="left-sidebar__city">Rm. Valcea, Romania</span>
+                <span class="left-sidebar__timezone">4:32PM (GMT-4)</span>
+              </div>
+              <div class="info__right-sidebar">
+                <img src="/assets/av.png" alt="" />
+              </div>
+            </div>
+
+            <div class="buttons">
+              <span class="buttons__upload">
+                upload picture
+              </span>
+              <span class="buttons__remove">
+                remove picture
+              </span>
+            </div>
+          </div>
+          <div class="settings__leftbar">
+            <div class="basic-info">
+              <div class="caption">
+                <span class="caption__title">Basic Profile</span>
+                <span class="caption__description"
+                  >The information can be edited from yuor profile page</span
+                >
+              </div>
+              <div class="basic-info__body">
+                <div class="input-line">
+                  <div class="input-line__input-container">
+                    <input
+                      type="textbox"
+                      class="input-container__textbox inp-box"
+                      placeholder="First Name"
+                    />
+                    <span class="input-container__desc--hidden" id="hidden-desc"
+                      >First Name</span
+                    >
+                    <span class="input-container__subtitle"
+                      >Please specify the first name</span
+                    >
+                  </div>
+                  <div class="input-line__input-container">
+                    <input
+                      type="textbox"
+                      class="input-container__textbox inp-box1 "
+                      placeholder="Last Name"
+                    />
+                    <span
+                      class="input-container__desc--hidden2"
+                      id="hidden-desc2"
+                      >Last Name</span
+                    >
+                    <span class="input-container__subtitle">Assitive text</span>
+                  </div>
+                </div>
+                <div class="input-line">
+                  <div class="input-line__input-container">
+                    <input
+                      type="textbox"
+                      class="input-container__textbox inp-box2"
+                      placeholder="adrian_shp@yahoo.com"
+                    />
+                    <span
+                      class="input-container__desc--hidden3"
+                      id="hidden-desc3"
+                      >Email</span
+                    >
+                  </div>
+                  <div class="input-line__input-container">
+                    <input
+                      type="textbox"
+                      class="input-container__textbox inp-box3"
+                      placeholder="123456789"
+                    />
+                    <span
+                      class="input-container__desc--hidden4"
+                      id="hidden-desc4"
+                    >
+                      Phone</span
+                    >
+                  </div>
+                </div>
+                <div class="input-line">
+                  <div class="input-line__input-container">
+                    <input
+                      type="textbox"
+                      class="input-container__textbox inp-box4"
+                      placeholder="Romania"
+                    /><span
+                      class="input-container__desc--hidden5"
+                      id="hidden-desc5"
+                      >Country</span
+                    >
+                  </div>
+                  <div class="input-line__input-container">
+                    <input
+                      type="textbox"
+                      class="input-container__textbox inp-box5"
+                      placeholder="Ramnicu Valcea"
+                    /><span
+                      class="input-container__desc--hidden6"
+                      id="hidden-desc6"
+                      >City</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <img
+                class="temp-line temp-line--full-width"
+                src="./assets/Rectangle.png"
+              />
+              <div class="basic-info__footer">
+                <span class="footer__save-btn">SAVE SETTINGS</span>
+              </div>
+            </div>
+            <div class="notifications">
+              <div class="notifications-header">
+                <div class="caption">
+                  <span class="caption__title">Notifications</span>
+                  <span class="caption__description"
+                    >Manage the notifications emailing</span
+                  >
+                </div>
+              </div>
+              <div class="notifications-body">
+                <div class="notifications-body__column">
+                  <span class="caption__title caption__title--margin"
+                    >Notifications</span
+                  >
+                  <div class="pretty p-svg p-curve ">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                        <path
+                          d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                          style="stroke: white;fill:white;"
+                        ></path>
+                      </svg>
+                      <label class="checkbox-text">Email</label>
+                    </div>
+                  </div>
+                  <div
+                    class="pretty p-svg p-curve pretty--margin checkbox--checked "
+                  >
+                    <input type="checkbox" onchange="funct()" />
+                    <div class="state p-primary">
+                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                        <path
+                          d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                          style="stroke: white;fill:white;"
+                        ></path>
+                      </svg>
+
+                      <label class="checkbox-text">Push notifications</label>
+                    </div>
+                    <span class="hidden" id="test">For your mobile or tablet device</span>
+                  </div>
+
+                  <div class="pretty p-svg p-curve ">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                        <path
+                          d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                          style="stroke: white;fill:white;"
+                        ></path>
+                      </svg>
+                      <label class="checkbox-text">Text Messages</label>
+                    </div>
+                  </div>
+                  <div class="pretty p-svg p-curve pretty--mbot">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                        <path
+                          d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                          style="stroke: white;fill:white;"
+                        ></path>
+                      </svg>
+                      <label class="checkbox-text">Phone calls</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="notifications-body__column">
+                  <span class="caption__title caption__title--margin">Messages</span>
+                  <div class="pretty p-svg p-curve ">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                        <path
+                          d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                          style="stroke: white;fill:white;"
+                        ></path>
+                      </svg>
+                      <label class="checkbox-text">Email</label>
+                    </div>
+                  </div>
+                  <div class="pretty p-svg p-curve ">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                        <path
+                          d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                          style="stroke: white;fill:white;"
+                        ></path>
+                      </svg>
+                      <label class="checkbox-text">Push notifications</label>
+                    </div>
+                  </div>
+                  <div class="pretty p-svg p-curve ">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                        <path
+                          d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                          style="stroke: white;fill:white;"
+                        ></path>
+                      </svg>
+                      <label class="checkbox-text">Text Messages</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="temp-line temp-line--full-width temp-line--margin-top"
+                src="./assets/Rectangle.png"
+              />
+              <div class="notifications__footer">
+                <span
+                  class="footer__save-btn footer__save-btn--color footer__save-btn--narrow"
+                >
+                  SAVE
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
