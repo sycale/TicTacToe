@@ -40,6 +40,7 @@ module.exports = {
              template: './src/index.html', //source
              filename: 'index.html'  //destination
          }),
-        new ExtractTextPlugin('style.css')
+        new ExtractTextPlugin('style.css'),
+        
     ]
 }

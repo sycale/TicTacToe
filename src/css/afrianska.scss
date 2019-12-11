@@ -765,3 +765,22 @@ body {
     color: red;
   }
 }
+.list__text:hover{
+  color: orange;
+  cursor: pointer;
+}
+.header-logo:hover{
+  cursor: pointer;
+}
+.basic-info__footer:active{
+  background-color: orange;
+  box-shadow: orange;
+}
+.notifications__footer:active{
+  background-color: orange;
+  border:none;
+}
+.notifications__footer:active .footer__save-btn{
+  background-color: orange;
+  border:none
+}
