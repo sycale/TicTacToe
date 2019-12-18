@@ -127,4 +127,15 @@ function gameOver() {
     }
     counter = 0;
   }
+  counter = 0;
+  for(let i=0;i<3;i++){
+    for(let j=0;j<3;j++){
+      if($(`.d${i}${j}`).hasClass('checked') || $(`.d${i}${j}`).hasClass('checked-second_player')){
+        counter++;
+      }
+    }
+  }
+  if(counter == 9){
+    return 3;
+  }
 }
