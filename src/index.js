@@ -1,2 +1,2 @@
-import './css/afrianska.scss';
-import './123.js'
+import './css/tictactoe.scss';
+import './tictactoe.js'
