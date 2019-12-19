@@ -6,13 +6,7 @@
   background-image: -moz-linear-gradient($from, $to);
 
   /* Safari 4+, Chrome 1+ */
-  background-image: -webkit-gradient(
-    linear,
-    0% 0%,
-    0% 100%,
-    from($from),
-    to($to)
-  );
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
 
   /* Safari 5.1+, Chrome 10+ */
   background-image: -webkit-linear-gradient($from, $to);
@@ -26,9 +20,9 @@ body {
   display: flex;
   flex-direction: row;
 }
-.aside{
-    width:18%;
-    background-color: rgba(51, 255, 0, 0.534);
+.aside {
+  width: 18%;
+  background-color: rgba(51, 255, 0, 0.534);
 }
 .cells {
   border: solid black 1px;
@@ -36,16 +30,15 @@ body {
   height: 100px;
 }
 .board {
-  margin-right:70px;
+  margin-right: 70px;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
-  &--border{
-    border:solid black 1px;
+  &--border {
+    border: solid black 1px;
   }
-
 }
 .first-row,
 .second-row,
@@ -54,27 +47,26 @@ body {
   flex-direction: row;
 }
 
-.checked:after{
-    content: 'X';
-    font-size: 100px;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    width:100%;
-    margin-left:15px;
-    margin-top:-5px;
+.checked:after {
+  content: 'X';
+  font-size: 100px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  margin-left: 15px;
+  margin-top: -5px;
 }
 .checked-second_player:after {
-    content: "O";
-    font-size: 100px;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    width:100%;
-    margin-left:15px;
-    margin-top:-5px;
-    
-  }
+  content: 'O';
+  font-size: 100px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  margin-left: 15px;
+  margin-top: -5px;
+}
 .header {
   display: inline-block;
   width: 100%;
@@ -84,17 +76,16 @@ body {
   align-items: center;
   margin-left: 0px;
   font-size: 20px;
-  margin-top:50px;
+  margin-top: 50px;
   &__text {
     font-weight: 700;
     margin-top: 15px;
-    margin-left:50px;
-    margin-right:50px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 .reset-btn {
-    
-    border-top: solid black 1px;
+  border-top: solid black 1px;
   width: 100%;
   height: 50px;
   font-size: 20px;
@@ -104,16 +95,14 @@ body {
   padding-top: 50px;
 }
 
-.score{
-    margin-top:50px;
-    width:100%;
-    text-align: center;
-    font-weight: 700;
-    font-size:20px;
-    border-top:solid black 1px;
-    padding-top:50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    
-
+.score {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  border-top: solid black 1px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
 }
