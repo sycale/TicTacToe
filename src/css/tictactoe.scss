@@ -20,6 +20,7 @@
   /* Opera 11.10+ */
   background-image: -o-linear-gradient($from, $to);
 }
+
 body {
   margin: 0px;
   display: flex;
@@ -33,7 +34,6 @@ body {
   border: solid black 1px;
   width: 100px;
   height: 100px;
-  background-color: blue;
 }
 .board {
   display: flex;
@@ -41,6 +41,10 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  &--border{
+    border:solid black 1px;
+  }
+
 }
 .first-row,
 .second-row,
