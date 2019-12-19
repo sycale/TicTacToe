@@ -10,7 +10,7 @@ for (let i = 0; i < 3; i++) {
   cells[i] = new Array();
 }
 
-function check_if_filled() {
+function checkFill() {
   if (
     $(this).hasClass("checked") ||
     $(this).hasClass("checked-second_player")
@@ -20,7 +20,7 @@ function check_if_filled() {
 }
 
 function turn() {
-  if (status % 2 == 0) {
+  if (status % 2 === 0) {
     $(this).addClass("checked");
     status += 1;
     $(".header__text").replaceWith(
@@ -53,29 +53,27 @@ function clear() {
   status = 0;
 }
 
-function printStatus() {
+function printStatus(callback) {
   $(".score").replaceWith(
     `<div class = 'score'> Score: ${firstPlayerCounter} - ${secondPlayerCounter} </div>`
   );
+  callback();
 }
 
 $(document).ready(function() {
   $(".cells").click(function() {
-    if (!check_if_filled.call(this)) {
+    if (!checkFill.call(this)) {
       turn.call(this);
       var result = gameOver();
-      if (result == 1) {
+      if (result === 1) {
         alert("First Player has won");
-        printStatus();
-        clear();
-      } else if (result == 2) {
-        printStatus();
+        printStatus(clear);
+      } else if (result === 2) {
+        printStatus(clear);
         alert("Second Player has won");
-        clear();
-      } else if (result == 3) {
+      } else if (result === 3) {
         alert("Draw");
-        printStatus();
-        clear();
+        printStatus(clear);
       }
     } else {
       alert("Cant place here");
@@ -103,39 +101,42 @@ function gameOver() {
     ["01", "11", "21"],
     ["02", "12", "22"]
   ];
-  for (let c of winCond) {
-    for (let q of c) {
-      if ($(`.d${q}`).hasClass("checked")) {
+  for (let combination of winCond) {
+    for (let combinationItem of combination) {
+      if ($(`.d${combinationItem}`).hasClass("checked")) {
         counter++;
       }
     }
-    if (counter == 3) {
+    if (counter === 3) {
       firstPlayerCounter++;
       return 1;
     }
     counter = 0;
   }
-  for (let c of winCond) {
-    for (let q of c) {
-      if ($(`.d${q}`).hasClass("checked-second_player")) {
+  for (let combination of winCond) {
+    for (let combinationItem of combination) {
+      if ($(`.d${combinationItem}`).hasClass("checked-second_player")) {
         counter++;
       }
     }
-    if (counter == 3) {
+    if (counter === 3) {
       secondPlayerCounter++;
       return 2;
     }
     counter = 0;
   }
   counter = 0;
-  for(let i=0;i<3;i++){
-    for(let j=0;j<3;j++){
-      if($(`.d${i}${j}`).hasClass('checked') || $(`.d${i}${j}`).hasClass('checked-second_player')){
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      if (
+        $(`.d${i}${j}`).hasClass("checked") ||
+        $(`.d${i}${j}`).hasClass("checked-second_player")
+      ) {
         counter++;
       }
     }
   }
-  if(counter == 9){
+  if (counter === 9) {
     return 3;
   }
 }
