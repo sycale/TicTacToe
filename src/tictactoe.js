@@ -103,7 +103,7 @@ function gameOver() {
 
 
 $(document).ready(() => {
-  $('.cells').click(function() {
+  $('.cells').click(function () {
     if (!checkFill.call(this)) {
       turn.call(this);
       const result = gameOver();
