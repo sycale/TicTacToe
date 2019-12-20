@@ -19,9 +19,12 @@ body {
   margin: 0px;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .aside {
-  width: 18%;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(51, 255, 0, 0.534);
 }
 .cells {
@@ -32,8 +35,8 @@ body {
 .board {
   margin-right: 70px;
   display: flex;
-  flex-direction: column;
   width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   &--border {
@@ -69,7 +72,6 @@ body {
 }
 .header {
   display: inline-block;
-  width: 100%;
   margin-bottom: 20px;
   height: 50px;
   text-align: center;

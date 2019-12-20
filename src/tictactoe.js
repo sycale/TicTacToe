@@ -101,6 +101,7 @@ function gameOver() {
   return 0;
 }
 
+
 $(document).ready(() => {
   $('.cells').click(function() {
     if (!checkFill.call(this)) {
